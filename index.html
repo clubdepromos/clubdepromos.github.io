@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clubdepromos | Ofertas verificadas en Argentina</title>
+  <meta name="description" content="Entrá al Club de las mejores ofertas verificadas de Argentina. Tecnología, hogar y productos premium con descuentos reales.">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="promoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2>🎉 Código Promocional del Día</h2>
+    <p>Usalo antes de que expire:</p>
+    <div class="code-box">
+      <span id="dailyCode"></span>
+      <button onclick="copyCode()" class="copy-btn">📋</button>
+    </div>
+    <small>Aplicalo al finalizar tu compra en Mercado Libre.</small>
+  </div>
+</div>
+
+<div class="sticky-bar">
+  🎟️ Código del día: <strong id="stickyCode"></strong> |
+  ⏳ Expira en <span id="countdown"></span>
+</div>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">clubde<span>promos</span></h1>
+    <nav>
+      <a href="#destacados">Ofertas</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#codigos">Códigos</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Entrá al Club de las Mejores Ofertas de Argentina</h2>
+    <p>Seleccionamos y verificamos descuentos reales en tecnología, hogar y productos premium. Solo lo que realmente vale la pena.</p>
+    <a href="#destacados" class="btn-primary">Ver ofertas destacadas</a>
+  </div>
+</section>
+
+<section id="destacados" class="products">
+  <div class="container">
+    <h3>🔥 Productos Destacados</h3>
+
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <div class="product-card square">
+          <div class="discount-badge">-30%</div>
+          <img src="https://via.placeholder.com/400" alt="Smart TV 55 pulgadas">
+          <h4>Smart TV 55" 4K</h4>
+          <div class="price">
+            <span class="current">$499.999</span>
+            <span class="old">$659.999</span>
+          </div>
+          <a href="#" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <div class="discount-badge">-25%</div>
+          <img src="https://via.placeholder.com/400" alt="Silla ergonómica">
+          <h4>Silla Ergonómica Pro</h4>
+          <div class="price">
+            <span class="current">$199.999</span>
+            <span class="old">$259.999</span>
+          </div>
+          <a href="#" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <div class="discount-badge">-18%</div>
+          <img src="https://via.placeholder.com/400" alt="Auriculares Bluetooth">
+          <h4>Auriculares Bluetooth</h4>
+          <div class="price">
+            <span class="current">$89.999</span>
+            <span class="old">$109.999</span>
+          </div>
+          <a href="#" class="btn-secondary">Ver oferta</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="categorias" class="categories">
+  <div class="container">
+    <h3>📦 Categorías</h3>
+    <div class="category-grid">
+      <div class="category-card">💻 Tecnología</div>
+      <div class="category-card">🏠 Hogar</div>
+      <div class="category-card">🪑 Home Office</div>
+      <div class="category-card">🚀 Premium</div>
+      <div class="category-card">🎟️ Códigos</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>clubdepromos.com es un sitio independiente afiliado. Podemos recibir comisión por compras realizadas a través de nuestros enlaces sin costo extra.</p>
+    <p>No somos tienda oficial ni pertenecemos a Mercado Libre.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
