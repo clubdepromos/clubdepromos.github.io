@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hogar | clubdepromos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hogar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">clubde<span>promos</span></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#destacados">Ofertas</a>
+      <a href="index.html#categorias">Categorías</a>
+    </nav>
+  </div>
+</header>
+
+<section class="products-section">
+  <div class="container">
+
+    <div class="top-bar">
+      <h1>🏠 Hogar</h1>
+
+      <select id="sortSelect">
+        <option value="sold">Más vendidos</option>
+        <option value="low">Más baratos</option>
+        <option value="high">Más caros</option>
+      </select>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card" data-price="79990" data-sold="5000">
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Freidora de Aire 7.5L</h4>
+        <p class="price">$79.990</p>
+      </div>
+
+      <div class="product-card" data-price="55096" data-sold="1000">
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Silla Oficina Ergonómica</h4>
+        <p class="price">$55.096</p>
+      </div>
+
+      <div class="product-card" data-price="12520" data-sold="10000">
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Serum Elvive Dream Liso</h4>
+        <p class="price">$12.520</p>
+      </div>
+
+      <div class="product-card" data-price="124236" data-sold="5000">
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Soldadora Inverter KB-XS 150</h4>
+        <p class="price">$124.236</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="hogar.js"></script>
+</body>
+</html>

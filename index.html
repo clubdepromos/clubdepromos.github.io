@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>clubdepromos | Ofertas verificadas en Argentina</title>
   <meta name="description" content="Entrá al Club de las mejores ofertas verificadas de Argentina. Tecnología, hogar y productos premium con descuentos reales.">
-
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +19,7 @@
       <span id="dailyCode"></span>
       <button onclick="copyCode()" class="copy-btn">📋</button>
     </div>
-    <small>Aplicalo al finalizar tu compra en Mercado Libre.</small>
+    <small>Aplicalo al finalizar tu compra.</small>
   </div>
 </div>
 
@@ -35,7 +34,6 @@
     <nav>
       <a href="#destacados">Ofertas</a>
       <a href="#categorias">Categorías</a>
-      <a href="#codigos">Códigos</a>
     </nav>
   </div>
 </header>
@@ -43,8 +41,8 @@
 <section class="hero">
   <div class="container">
     <h2>Entrá al Club de las Mejores Ofertas de Argentina</h2>
-    <p>Seleccionamos y verificamos descuentos reales en tecnología, hogar y productos premium. Solo lo que realmente vale la pena.</p>
-    <a href="#destacados" class="btn-primary">Ver ofertas destacadas</a>
+    <p>Seleccionamos y verificamos descuentos reales en tecnología, hogar y productos premium.</p>
+    <a href="destacados.html" class="btn-primary">Ver ofertas destacadas</a>
   </div>
 </section>
 
@@ -53,42 +51,127 @@
     <h3>🔥 Productos Destacados</h3>
 
     <div class="carousel">
+
+      <button class="carousel-prev">‹</button>
+
       <div class="carousel-track">
-
+        <!-- PRODUCTOS -->
         <div class="product-card square">
-          <div class="discount-badge">-30%</div>
-          <img src="https://via.placeholder.com/400" alt="Smart TV 55 pulgadas">
-          <h4>Smart TV 55" 4K</h4>
+          <div class="discount-badge highlight">🔥 MÁS VENDIDO</div>
+          <img src="img/starlink.jpg" alt="Kit De Internet Vía Satélite Starlink Mini X">
+          <h4>Kit De Internet Vía Satélite Starlink Mini X</h4>
+          <div class="rating">⭐ 4.9 (149 opiniones)</div>
           <div class="price">
-            <span class="current">$499.999</span>
-            <span class="old">$659.999</span>
+            <span class="current">$299.000</span>
+            <span class="installments">6x $49.833,33</span>
           </div>
-          <a href="#" class="btn-secondary">Ver oferta</a>
+          <ul class="product-info">
+            <li>✔ Antena de internet satelital</li>
+            <li>✔ Incluye 1 unidad</li>
+            <li>✔ Requiere plan mensual</li>
+            <li>✔ Confirmar cobertura en tu zona</li>
+          </ul>
+          <a href="https://meli.la/2wNsn3u" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            Ver oferta
+          </a>
         </div>
 
         <div class="product-card square">
-          <div class="discount-badge">-25%</div>
-          <img src="https://via.placeholder.com/400" alt="Silla ergonómica">
-          <h4>Silla Ergonómica Pro</h4>
+          <img src="https://via.placeholder.com/400" alt="Smart Tv Led 32 Noblex">
+          <h4>Smart Tv Led 32” Noblex 91dv32x7080 Android</h4>
+          <div class="rating">⭐ 4.9 (+5.000 vendidos)</div>
           <div class="price">
-            <span class="current">$199.999</span>
-            <span class="old">$259.999</span>
+            <span class="current">$285.439</span>
           </div>
-          <a href="#" class="btn-secondary">Ver oferta</a>
+          <ul class="product-info">
+            <li>✔ Android TV integrado</li>
+            <li>✔ Pantalla LED HD 32"</li>
+            <li>✔ Apps como Netflix y YouTube</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
         </div>
 
         <div class="product-card square">
-          <div class="discount-badge">-18%</div>
-          <img src="https://via.placeholder.com/400" alt="Auriculares Bluetooth">
-          <h4>Auriculares Bluetooth</h4>
+          <div class="discount-badge">MÁS VENDIDO</div>
+          <img src="https://via.placeholder.com/400" alt="Repetidor TP-Link RE200">
+          <h4>Repetidor WiFi TP-Link RE200 AC750</h4>
+          <div class="rating">⭐ 4.6 (+100.000 vendidos)</div>
           <div class="price">
-            <span class="current">$89.999</span>
-            <span class="old">$109.999</span>
+            <span class="current">$39.499</span>
           </div>
-          <a href="#" class="btn-secondary">Ver oferta</a>
+          <ul class="product-info">
+            <li>✔ Doble banda 2.4GHz / 5GHz</li>
+            <li>✔ Mejora señal en toda la casa</li>
+            <li>✔ Fácil instalación</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <img src="https://via.placeholder.com/400" alt="Silla Ergonomica Oficina">
+          <h4>Silla De Oficina Ergonómica Circle-Line Mesh Negra</h4>
+          <div class="rating">⭐ 4.4 (+1.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$55.096</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Respaldo con malla transpirable</li>
+            <li>✔ Altura regulable</li>
+            <li>✔ Ideal home office</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <img src="https://via.placeholder.com/400" alt="Freidora De Aire PowerXL">
+          <h4>Freidora De Aire PowerXL 7.5L Vortex Pro</h4>
+          <div class="rating">⭐ 4.9 (+5.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$79.990</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ 10 funciones digitales</li>
+            <li>✔ Pantalla táctil</li>
+            <li>✔ Gran capacidad 7.5 litros</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <div class="discount-badge">MÁS VENDIDO</div>
+          <img src="https://via.placeholder.com/400" alt="Serum Elvive Dream Liso">
+          <h4>Serum Elvive Dream Liso 100ml</h4>
+          <div class="rating">⭐ 4.6 (+10.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$12.520</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Control anti-frizz</li>
+            <li>✔ Protección térmica</li>
+            <li>✔ Cabello más suave</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+          <img src="img/kindle.jpg" alt="Amazon Kindle E-reader 2024">
+          <h4>Amazon Kindle 2024 11th Gen 16GB</h4>
+          <div class="rating">⭐ 4.9 (+10.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$176.016</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Pantalla 6” antirreflejo</li>
+            <li>✔ 16GB almacenamiento</li>
+            <li>✔ Batería de larga duración</li>
+          </ul>
+          <a href="#" target="_blank" class="btn-secondary">Ver oferta</a>
         </div>
 
       </div>
+
+      <button class="carousel-next">›</button>
+
     </div>
 
   </div>
@@ -97,20 +180,34 @@
 <section id="categorias" class="categories">
   <div class="container">
     <h3>📦 Categorías</h3>
+
     <div class="category-grid">
-      <div class="category-card">💻 Tecnología</div>
-      <div class="category-card">🏠 Hogar</div>
-      <div class="category-card">🪑 Home Office</div>
-      <div class="category-card">🚀 Premium</div>
-      <div class="category-card">🎟️ Códigos</div>
+
+      <a href="tecnologia.html" class="category-card">
+        💻 Tecnología
+      </a>
+
+      <a href="hogar.html" class="category-card">
+        🏠 Hogar
+      </a>
+
+      <a href="homeoffice.html" class="category-card">
+        🪑 Home Office
+      </a>
+
+      <a href="premium.html" class="category-card">
+        🚀 Premium
+      </a>
+
     </div>
+
   </div>
 </section>
 
 <footer>
-  <div class="container">
-    <p>clubdepromos.com es un sitio independiente afiliado. Podemos recibir comisión por compras realizadas a través de nuestros enlaces sin costo extra.</p>
-    <p>No somos tienda oficial ni pertenecemos a Mercado Libre.</p>
+  <div class="container footer-content">
+    <p>clubdepromos.com - 2026</p>
+    <a href="condiciones.html" class="footer-link">Condiciones</a>
   </div>
 </footer>
 
