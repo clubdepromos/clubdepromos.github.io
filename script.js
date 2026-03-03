@@ -25,12 +25,35 @@ function setDailyCode() {
 function copyCode() {
   const el = document.getElementById("dailyCode");
   if (!el) return;
+
   const code = el.innerText;
-  navigator.clipboard.writeText(code);
-  const btn = document.querySelector(".copy-btn");
-  if (!btn) return;
-  btn.innerText = "✅";
-  setTimeout(() => (btn.innerText = "📋"), 1500);
+
+  navigator.clipboard.writeText(code).then(() => {
+    const btn = document.querySelector(".copy-btn");
+    if (!btn) return;
+
+    btn.innerText = "Copiado ✓";
+    btn.style.background = "#16a34a";
+
+    setTimeout(() => {
+      btn.innerText = "📋";
+      btn.style.background = "";
+    }, 2000);
+  });
+}
+
+function copyCustomCode(button) {
+  const code = button.parentElement.querySelector("span").innerText;
+
+  navigator.clipboard.writeText(code).then(() => {
+    button.innerText = "Copiado ✓";
+    button.style.background = "#16a34a";
+
+    setTimeout(() => {
+      button.innerText = "Copiar";
+      button.style.background = "";
+    }, 2000);
+  });
 }
 
 function startCountdown() {
@@ -187,7 +210,15 @@ window.addEventListener("load", () => {
   startCarousel();
 
   setTimeout(() => {
+  const today = new Date().toDateString();
+  const lastShown = localStorage.getItem("promoShown");
+
+  if (lastShown !== today) {
     const modal = document.getElementById("promoModal");
-    if (modal) modal.style.display = "flex";
-  }, 700);
+    if (modal) {
+      modal.style.display = "flex";
+      localStorage.setItem("promoShown", today);
+    }
+  }
+}, 700);
 });
