@@ -39,7 +39,9 @@ body {
 
 header {
   background: rgba(7, 21, 36, 0.8);
+  margin-top: -2vh;
   backdrop-filter: blur(10px);
+  height: 10vh;
   border-bottom: 4px solid rgba(255,255,255,0.05);
 }
 
@@ -53,8 +55,8 @@ header {
   font-weight: 800;
   font-size: 2.4rem;
   letter-spacing: 0.5px;
-  margin-bottom: 8px;
-  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 .logo span {
@@ -613,4 +615,138 @@ footer {
 .copy-btn-alt:hover {
   background: var(--accent-hover);
   transform: scale(1.05);
+}
+
+/* ===== MOBILE OPTIMIZACIÓN REAL ===== */
+@media (max-width: 480px) {
+
+  body {
+    padding-top: 60px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  /* NAV */
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .btn-primary {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  /* CAROUSEL */
+  .carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-track {
+    gap: 16px;
+  }
+
+  .product-card {
+    width: 85%;
+    flex: 0 0 85%;
+    padding: 18px;
+    scroll-snap-align: center;
+  }
+
+  .product-card img {
+    height: 170px;
+  }
+
+  .current {
+    font-size: 1.4rem;
+  }
+
+  .product-info {
+    font-size: 12px;
+  }
+
+  .discount-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* CATEGORIES */
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .category-card {
+    padding: 25px;
+    font-size: 15px;
+  }
+
+  /* CODES */
+  .codes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .code-box-alt {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .copy-btn-alt {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  /* STICKY BAR */
+  .sticky-bar {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 }
