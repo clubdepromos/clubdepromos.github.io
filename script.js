@@ -1,5 +1,5 @@
 const promoCodes = [
-  "AHORRO15",
+  "PREVIACYBER",
   "TECH20",
   "OFERTA25",
   "PREMIUM30",
