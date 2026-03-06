@@ -1,9 +1,6 @@
 const promoCodes = [
   "PREVIACYBER",
-  "TECH20",
-  "OFERTA25",
-  "PREMIUM30",
-  "FLASH10"
+  "FECHASDOBLES"
 ];
 
 function getDailyCode() {
