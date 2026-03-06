@@ -1,6 +1,5 @@
 const promoCodes = [
-  "QUENOSECORTE",
-  "PREVIACYBER"
+  "QUENOSECORTE"
 ];
 
 function getDailyCode() {
