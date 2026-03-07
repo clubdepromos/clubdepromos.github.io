@@ -39,7 +39,7 @@ body {
 
 header {
   background: rgba(7, 21, 36, 0.8);
-  margin-top: -2vh;
+  margin-top: -2.4vh;
   backdrop-filter: blur(10px);
   height: 10vh;
   border-bottom: 4px solid rgba(255,255,255,0.05);
@@ -53,10 +53,10 @@ header {
 
 .logo {
   font-weight: 800;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   letter-spacing: 0.5px;
   margin-bottom: 4px;
-  margin-top: 2.5vh;
+  margin-top: 3vh;
 }
 
 .logo span {
@@ -554,7 +554,7 @@ footer {
   color: var(--text-muted);
   margin-top: 10px;
   margin-bottom: 50px;
-  font-size: 15px;
+  font-size: 1.8vh;
 }
 
 .codes-grid {
@@ -582,7 +582,7 @@ footer {
 }
 
 .code-title {
-  font-weight: 600;
+  font-weight: 2.2vh;
   margin-bottom: 20px;
   letter-spacing: 0.5px;
   font-size: 15px;
@@ -596,7 +596,7 @@ footer {
   background: var(--bg-secondary);
   padding: 14px 18px;
   border-radius: 14px;
-  font-weight: 700;
+  font-weight: 1.4vh;
   letter-spacing: 1px;
   color: var(--accent);
   font-size: 16px;
@@ -607,7 +607,7 @@ footer {
   border: none;
   padding: 8px 16px;
   border-radius: 20px;
-  font-weight: 600;
+  font-weight: 1.8vh;
   cursor: pointer;
   transition: all 0.3s ease;
 }
