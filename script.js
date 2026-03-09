@@ -1,5 +1,5 @@
 const promoCodes = [
-  "QUENOSECORTE"
+  "LLEGOCYBERFEST"
 ];
 
 function getDailyCode() {
