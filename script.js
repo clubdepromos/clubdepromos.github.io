@@ -1,5 +1,10 @@
 const promoCodes = [
-  "LLEGOCYBERFEST"
+  "LLEGOCYBERFEST",
+  "LLEGOCYBER",
+  "COMPRAHOY",
+  "BENEFICIO",
+  "ARRANCOCYBER",
+  "DESCUENTOHOY"
 ];
 
 function getDailyCode() {
