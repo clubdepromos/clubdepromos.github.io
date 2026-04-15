@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ofertas Destacadas | clubdepromos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="destacados.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">clubde<span>promos</span></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="index.html#categorias">Categorías</a>
+      <a href="tecnologia.html">Tecnología</a>
+      <a href="hogar.html">Hogar</a>
+    </nav>
+  </div>
+</header>
+
+<section class="products-section">
+  <div class="container">
+
+    <div class="top-bar">
+      <h1>🔥 Ofertas Destacadas</h1>
+
+      <select id="sortSelect">
+        <option value="sold">Más vendidos</option>
+        <option value="low">Más baratos</option>
+        <option value="high">Más caros</option>
+      </select>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <div class="product-card highlight-card" data-price="299000" data-sold="149">
+        <span class="badge">🔥 MÁS VENDIDO</span>
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Starlink Mini X</h4>
+        <p class="price">$299.000</p>
+      </div>
+
+      <div class="product-card highlight-card" data-price="39499" data-sold="100000">
+        <span class="badge">🔥 TOP VENTAS</span>
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Repetidor TP-Link RE200</h4>
+        <p class="price">$39.499</p>
+      </div>
+
+      <div class="product-card highlight-card" data-price="79990" data-sold="5000">
+        <span class="badge">🔥 OFERTA</span>
+        <img src="https://via.placeholder.com/400" alt="">
+        <h4>Freidora de Aire 7.5L</h4>
+        <p class="price">$79.990</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<script src="destacados.js"></script>
+</body>
+</html>

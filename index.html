@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clubdepromos | Ofertas verificadas en Argentina</title>
+  <meta name="description" content="Entrá al Club de las mejores ofertas verificadas de Argentina. Tecnología, hogar y productos premium con descuentos reales.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="promoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2>🎉 Código Promocional del Día</h2>
+    <p>Usalo antes de que expire:</p>
+    <div class="code-box">
+      <span id="dailyCode"></span>
+      <button onclick="copyCode()" class="copy-btn">📋</button>
+    </div>
+    <small>Aplicalo al finalizar tu compra.</small>
+  </div>
+</div>
+
+<div class="sticky-bar">
+  🎟️ Código del día: <strong id="stickyCode"></strong> |
+  ⏳ Expira en <span id="countdown"></span>
+</div>
+
+<header>
+  <div class="container nav">
+    <h1 class="logo">clubde<span>promos</span></h1>
+    <nav>
+      <a href="#destacados">Ofertas</a>
+      <a href="#categorias">Categorías</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Entrá al Club de las Mejores Ofertas de Argentina</h2>
+    <p>Seleccionamos y verificamos descuentos reales en tecnología, hogar y productos premium.</p>
+    <a href="destacados.html" class="btn-primary">Ver ofertas destacadas</a>
+  </div>
+</section>
+
+<section id="destacados" class="products">
+  <div class="container">
+    <h3>🔥 Productos Destacados</h3>
+
+    <div class="carousel">
+
+      <button class="carousel-prev">‹</button>
+
+      <div class="carousel-track">
+        
+        <div class="product-card square">
+          <div class="discount-badge highlight">🔥 MÁS VENDIDO</div>
+          <img src="img/starlink.jpg" alt="Kit De Internet Vía Satélite Starlink Mini X">
+          <h4>Kit De Internet Vía Satélite Starlink Mini X</h4>
+          <div class="rating">⭐ 4.9 (149 opiniones)</div>
+          <div class="price">
+            <span class="current">$299.000</span>
+            <span class="installments">6x $49.833,33</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Antena de internet satelital</li>
+            <li>✔ Incluye 1 unidad</li>
+            <li>✔ Requiere plan mensual</li>
+            <li>✔ Confirmar cobertura en tu zona</li>
+          </ul>
+          <a href="https://meli.la/2wNsn3u" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            Ver oferta
+          </a>
+        </div>
+
+        <div class="product-card square">
+          <img src="img/noblex-32.jpg" alt="Smart Tv Led 32 Noblex">
+          <h4>Smart Tv Led 32” Noblex 91dv32x7080 Android</h4>
+          <div class="rating">⭐ 4.9 (+5.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$285.439</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Android TV integrado</li>
+            <li>✔ Pantalla LED HD 32"</li>
+            <li>✔ Apps como Netflix y YouTube</li>
+          </ul>
+          <a href="https://meli.la/313HLxY" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+            <div class="discount-badge highlight">🔥 MÁS VENDIDO</div>
+
+            <img src="img/redmi-buds-6-play.jpg" alt="Auriculares Xiaomi Redmi Buds 6 Play">
+
+            <h4>Auriculares Inalámbricos Xiaomi Redmi Buds 6 Play</h4>
+
+            <div class="rating">⭐ 4.8 (63.406 opiniones) · +100.000 vendidos</div>
+
+            <div class="price">
+              <span class="current">$33.000</span>
+              <span class="installments">9x $5.602,67</span>
+            </div>
+
+            <ul class="product-info">
+              <li>✔ Tecnología True Wireless</li>
+              <li>✔ Micrófono integrado</li>
+              <li>✔ Conexión Bluetooth estable</li>
+              <li>✔ Sonido potente y claro</li>
+              <li>✔ Diseño cómodo y liviano</li>
+            </ul>
+
+            <a href="https://meli.la/2SHyFu1" target="_blank" class="btn-secondary">
+              Ver oferta
+            </a>
+          </div>
+
+        <div class="product-card square">
+            <div class="discount-badge highlight">🔥 OFERTA IMPERDIBLE</div>
+            <img src="img/kit-camaras-geotek.jpg" alt="Kit 3 Cámaras Seguridad Geotek 3MP IP WiFi">
+            <h4>Kit 3 Cámaras Seguridad Geotek 3MP IP WiFi Exterior Full HD</h4>
+
+            <div class="rating">⭐ 4.8 (2.568 opiniones) · +1.000 vendidos</div>
+
+            <div class="price">
+              <span class="old">$224.999</span>
+              <span class="current">$119.499</span>
+              <span class="discount">46% OFF</span>
+              <span class="installments">6x $27.982,68</span>
+            </div>
+
+            <ul class="product-info">
+              <li>✔ Kit x3 cámaras domo exterior</li>
+              <li>✔ Resolución 3MP Full HD</li>
+              <li>✔ Visión nocturna inteligente</li>
+              <li>✔ Detección de movimiento</li>
+              <li>✔ Audio bidireccional</li>
+              <li>✔ Soporta hasta 128GB</li>
+            </ul>
+
+            <a href="https://meli.la/1yiB4tP" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Ver oferta
+            </a>
+          </div>
+
+          <div class="product-card square">
+            <img src="img/sansei-42.jpg" alt="Smart TV Sansei 42 pulgadas Android TV">
+            
+            <h4>Smart TV Sansei LED 42” Full HD Android TV</h4>
+            
+            <div class="rating">⭐ 4.7 (3.248 opiniones) · MÁS VENDIDO</div>
+
+            <div class="price">
+              <span class="old">$449.799</span>
+              <span class="current">$345.999</span>
+            </div>
+
+            <ul class="product-info">
+              <li>✔ Pantalla LED Full HD 42"</li>
+              <li>✔ Android TV con apps como Netflix y YouTube</li>
+              <li>✔ WiFi, Bluetooth y 3 puertos HDMI</li>
+              <li>✔ Ideal para ver el Mundial ⚽</li>
+            </ul>
+
+            <a href="https://meli.la/2uyQnfw" target="_blank" class="btn-secondary">
+              Ver oferta
+            </a>
+          </div>
+
+        <div class="product-card square">
+          <img src="img/sillaergonomica.jpg" alt="Silla Ergonomica Oficina">
+          <h4>Silla De Oficina Ergonómica Circle-Line Mesh Negra</h4>
+          <div class="rating">⭐ 4.4 (+1.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$55.096</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Respaldo con malla transpirable</li>
+            <li>✔ Altura regulable</li>
+            <li>✔ Ideal home office</li>
+          </ul>
+          <a href="https://meli.la/1xzhy42" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+        <div class="product-card square">
+            <div class="discount-badge highlight">🔥 OFERTA DEL DÍA</div>
+
+            <img src="img/freidora-philco.jpg" alt="Freidora De Aire Philco FR256PH 6L">
+
+            <h4>Freidora De Aire Philco FR256PH 6L 1700W 12 Programas</h4>
+
+            <div class="rating">⭐ 4.6 (4.270 opiniones) · +4.000 vendidos</div>
+
+            <div class="price">
+              <span class="old">$144.299</span>
+              <span class="current">$76.899</span>
+              <span class="discount">46% OFF</span>
+              <span class="installments">6x $18.007,18</span>
+            </div>
+
+            <ul class="product-info">
+              <li>✔ 6 litros de capacidad</li>
+              <li>✔ 1700W de potencia</li>
+              <li>✔ 12 programas de cocción</li>
+              <li>✔ Superficie antiadherente</li>
+              <li>✔ Ideal para cocinar sin aceite</li>
+            </ul>
+
+            <a href="https://meli.la/1fiW6Tx" target="_blank" class="btn-secondary">
+              Ver oferta
+            </a>
+          </div>
+
+        <div class="product-card square">
+            <div class="discount-badge highlight">🔥 OFERTA DEL DÍA</div>
+            <img src="img/hidrolavadora-trent.jpg" alt="Hidrolavadora Eléctrica Trent HLT307 1400W">
+
+            <h4>Hidrolavadora Eléctrica Trent HLT307 1400W 1600 PSI</h4>
+
+            <div class="rating">⭐ 4.8 (13.140 opiniones) · +50.000 vendidos</div>
+
+            <div class="price">
+              <span class="old">$195.500</span>
+              <span class="current">$93.500</span>
+              <span class="discount">52% OFF</span>
+              <span class="installments">6x $21.894,58</span>
+            </div>
+
+            <ul class="product-info">
+              <li>✔ Potencia 1400W · 1600 PSI (110 Bar)</li>
+              <li>✔ Manguera 3 metros incluida</li>
+              <li>✔ Dosificador de detergente</li>
+              <li>✔ Apagado automático</li>
+              <li>✔ Protector térmico integrado</li>
+              <li>✔ Ruedas para fácil transporte</li>
+            </ul>
+
+            <a href="https://meli.la/2mpb6rG" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Ver oferta
+            </a>
+          </div>
+
+        <div class="product-card square">
+          <img src="img/kindle.jpg" alt="Amazon Kindle E-reader 2024">
+          <h4>Amazon Kindle 2024 11th Gen 16GB</h4>
+          <div class="rating">⭐ 4.9 (+10.000 vendidos)</div>
+          <div class="price">
+            <span class="current">$176.016</span>
+          </div>
+          <ul class="product-info">
+            <li>✔ Pantalla 6” antirreflejo</li>
+            <li>✔ 16GB almacenamiento</li>
+            <li>✔ Batería de larga duración</li>
+          </ul>
+          <a href="https://meli.la/2i8GhdM" target="_blank" class="btn-secondary">Ver oferta</a>
+        </div>
+
+      </div>
+
+      <button class="carousel-next">›</button>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="categorias" class="categories">
+  <div class="container">
+    <h3>📦 Categorías</h3>
+
+    <div class="category-grid">
+
+      <a href="tecnologia.html" class="category-card">
+        💻 Tecnología
+      </a>
+
+      <a href="hogar.html" class="category-card">
+        🏠 Hogar
+      </a>
+
+      <a href="homeoffice.html" class="category-card">
+        🪑 Home Office
+      </a>
+
+      <a href="premium.html" class="category-card">
+        🚀 Premium
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="codes-section">
+  <div class="container">
+    <h3>🎟️ Códigos Activos del Club</h3>
+    <p class="codes-sub">
+      Copiá y usá estos códigos en las promociones destacadas del día.
+    </p>
+
+    <div class="codes-grid">
+
+      <div class="code-card">
+        <div class="code-title">Tecnología</div>
+        <div class="code-box-alt">
+          <span>LLEGOCYBERFEST</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-title">Hogar</div>
+        <div class="code-box-alt">
+          <span>COMPRAHOY</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+      
+      <div class="code-card">
+        <div class="code-title">Hogar</div>
+        <div class="code-box-alt">
+          <span>CYBERFEST</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-title">Hogar</div>
+        <div class="code-box-alt">
+          <span>COMPRACYBER</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-title">Home Office</div>
+        <div class="code-box-alt">
+          <span>BENEFICIO</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-title">Premium</div>
+        <div class="code-box-alt">
+          <span>ARRANCOCYBER</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+      <div class="code-card">
+        <div class="code-title">Premium</div>
+        <div class="code-box-alt">
+          <span>DESCUENTOHOY</span>
+          <button onclick="copyCustomCode(this)" class="copy-btn-alt">Copiar</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-wrapper">
+
+    <div class="footer-brand">
+      <h4 class="footer-logo">clubde<span>promos</span></h4>
+      <p class="footer-tagline">
+        Ofertas verificadas y seleccionadas para vos.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="condiciones.html">Condiciones</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://instagram.com/clubdepromos.ok" target="_blank" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm5 6a4 4 0 110 8 4 4 0 010-8zm6.5-.75a1 1 0 110 2 1 1 0 010-2z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.facebook.com/clubdepromos.ar" target="_blank" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M13 22v-8h3l1-4h-4V8c0-1.1.3-2 2-2h2V2h-3c-3 0-5 2-5 5v3H6v4h3v8h4z"/>
+        </svg>
+      </a>
+
+      <a href="https://x.com/clubdepromos" target="_blank" aria-label="X">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.244 2H21l-6.5 7.43L22 22h-6.828l-5.345-7.054L3.5 22H1l7.06-8.074L2 2h6.828l4.834 6.396L18.244 2z"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 clubdepromos.com — @clubdepromos
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
